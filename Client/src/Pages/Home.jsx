@@ -12,7 +12,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3000/api/recommend", {
+      const res = await fetch("https://moive-recommend-1.onrender.com/api/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
