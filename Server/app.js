@@ -23,11 +23,11 @@ app.use(
 app.use("/api", MainRoutes);
 
 
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get("*name", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+  res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
 
